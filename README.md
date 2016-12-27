@@ -8,18 +8,20 @@ easily extendable for other areas that are accessible via NRPN.
 Just implementing basic channel control didn't meet the needs because of the number of channels in play, 
 so a tag system with expansion was also implemented, which is what makes this usable.
 
+<pre>
 /channel/1/mute               - Mute channel 1
 /channel/1/unmute             - Unmute channel 1
 /channel/1-10/mute            - Mute channels 1-10
 /channel/[headset]/unmute     - Unmute all headsets
 /channel/[name:mike]/unmute   - Unmute Mike
 /channel/[headset,!mike]/unmute - Unmute all headsets except Mike
+</pre>
 
 It understands:
-/channel     mute/unmute
-/mix         mute/unmute
-/matrix      mute/unmute
-/mutegroup   mute/unmute
+* /channel     mute/unmute
+* /mix         mute/unmute
+* /matrix      mute/unmute
+* /mutegroup   mute/unmute
 
 # Python 2.7
 
